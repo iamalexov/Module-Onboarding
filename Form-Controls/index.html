@@ -1,27 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>My form exercise</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-  </head>
-  <body>
-    <header>
-      <h1>Product Pick</h1>
-    </header>
-    <main>
-      <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
-      </form>
-    </main>
-    <footer>
-      <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
-    </footer>
-  </body>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>My form exercise</title>
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body>
+  <header>
+    <h1>Product Pick</h1>
+  </header>
+  <main>
+    <form>
+      <!-- 
+        [ ] My form is semantic html.
+        [ ] All inputs have associated labels.
+        [ ] My Lighthouse Accessibility score is 100.
+        [ ] I require a valid name. I have defined a valid name as a text string of two characters or more.
+        [ ] I require a valid email.
+        [ ] I require one colour from a defined set of 3 colours.
+        [ ] I require one size from a defined set of 6 sizes.
+-->
+      <div>
+        <p>Please complete all required (*) fields.</p>
+        <p>
+          <label for="name">Name*:</label>
+          <input type="text" id="name" placeholder="Name" name="user_name" minlength="2" required />
+        </p>
+        <p>
+          <label for="mail">Email*:</label>
+          <input type="email" id="mail" placeholder="email" name="mail" required />
+        </p>
+
+        <p>
+          Choose the color of the T-shirt*
+        </p>
+        <div>
+          <label for="coral">CORAL</label>
+          <input type="radio" name="color" id="coral" value="coral" required>
+
+          <label for="red">RED</label>
+          <input type="radio" name="color" id="red" value="red">
+
+          <label for="azure">AZURE</label>
+          <input type="radio" name="color" id="azure" value="azure">
+        </div>
+        <p>
+          Choose the size of the T-shirt*
+        </p>
+        <div>
+          <label for="size">SIZE</label>
+          <select id="size" name="size" required>
+            <option value="xs">XS</option>
+            <option value="small">S</option>
+            <option value="m">M</option>
+            <option value="l">L</option>
+            <option value="xl">XL</option>
+            <option value="xxl">XXL</option>
+          </select>
+        </div>
+        
+      </div>
+      <div>
+          <button type="reset">Reset</button>
+          <button type="submit">Submit</button>
+        </div>
+    </form>
+  </main>
+  <footer>
+    <!-- change to your name-->
+    <h2>By Oleksii OvsIannikov 2025-2</h2>
+  </footer>
+</body>
+
 </html>
