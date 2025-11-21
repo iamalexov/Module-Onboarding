@@ -7,6 +7,7 @@
   <title>My form exercise</title>
   <meta name="description" content="" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="choose t-shirt color and size">
 </head>
 
 <body>
@@ -54,6 +55,7 @@
         <div>
           <label for="size">SIZE</label>
           <select id="size" name="size" required>
+            <option value="" disabled selected>Choose size</option>
             <option value="xs">XS</option>
             <option value="small">S</option>
             <option value="m">M</option>
@@ -61,18 +63,18 @@
             <option value="xl">XL</option>
             <option value="xxl">XXL</option>
           </select>
-        </div>
-        
+        </div><br>
+
       </div>
       <div>
-          <button type="reset">Reset</button>
-          <button type="submit">Submit</button>
-        </div>
+        <button type="reset">Reset</button>&nbsp;
+        <button type="submit">Submit</button>
+      </div>
     </form>
   </main>
   <footer>
     <!-- change to your name-->
-    <h2>By Oleksii OvsIannikov 2025-2</h2>
+    <p>By Oleksii OvsIannikov 2025-2</p>
   </footer>
 </body>
 
